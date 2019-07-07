@@ -68,6 +68,7 @@ def animate(i):
     return [im]
 
 anim = animation.FuncAnimation(fig, animate, init_func=init, frames=frames, interval=interval, blit=True, repeat=False)
+plt.axis('off')
 
 if len(filename):
     if '.mp4' in filename:
